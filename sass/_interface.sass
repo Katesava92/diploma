@@ -1,0 +1,64 @@
+.section
+  &-title
+    font-size: 38px
+    font-weight: 600
+    text-align: left
+    color: $dark
+  &-subtitle
+    font-size: 16px
+    font-weight: 400
+    line-height: 0
+    text-align: center
+    color: $primary
+
+.card
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: flex-start
+  max-width: 189px
+  &-image
+    text-align: center
+    &__wrap
+      position: relative
+      width: 72px
+      height: 72px
+      border-radius: 50%
+      background: $dark-200 url('../img/clients/client_4.svg') no-repeat center
+      &::after
+        content: ''
+        position: absolute
+        right: -15px
+        bottom: -20px
+        z-index: -2
+        display: inline-block
+        width: 48px
+        height: 48px
+        background: $light url('../img/clients/icon.svg') no-repeat right bottom
+  &-text
+    margin-left: 27px
+  &-title
+    font-size: 13px
+  &-description
+    max-width: 162px
+    font-size: 13px
+    line-height: 22px
+    color: $primary
+    
+.square
+  max-width: 233px
+  height: 207px
+  margin-left: -17px
+  margin-bottom: 45px
+  padding: 17px 43px 36px 37px
+  background: url(../img/border-1.png) no-repeat center
+  &--second
+    margin-bottom: 0
+    background: url(../img/border-2.png) no-repeat center
+
+.icon
+  &-wrap
+    width: 54px
+    height: 54px
+    border: 1px solid $secondary
+    border-radius: 27px
