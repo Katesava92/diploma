@@ -1,0 +1,50 @@
+.footer
+  padding-bottom: 81px
+  background: $dark-200
+  color: $light
+  &-block
+    display: flex
+    flex-direction: column
+  &-title
+    margin-top: 0
+    margin-bottom: 53px
+    font-size: 16px
+    font-weight: 600
+    line-height: 28px
+  &-text
+    margin-top: 0
+    margin-bottom: 0
+    padding: 0
+    font-size: 13px
+    font-weight: 400
+    line-height: 24px
+    color: $primary
+    list-style-type: none
+  &__item > a
+    color: $primary
+    text-decoration: none
+  &__copyright
+    color: $secondary
+
+.socials
+  display: flex
+  &__row
+    margin-top: 113px
+    align-items: center
+  &__icon
+    &-wrap
+      display: flex
+      justify-content: center
+      align-items: center
+      margin-right: 18px
+      &:hover
+        border-color: $hover
+        color: $hover
+      &--one
+        background: url('.') no-repeat center
+      &--two
+        background: url('../img/socials/youtube.svg') no-repeat center
+      &--three
+        background: url('../img/socials/whatsapp.svg') no-repeat center
+      &--four
+        background: url('../img/socials/mail.svg') no-repeat center

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ставрополье на ладони</title>
-  <link href="https://fonts.googleapis.com/css2?family=Istok+Web&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -83,7 +83,7 @@
               </div>
               <div class="card-text">
                 <h3 class="card-title clients__card-title">Волков Н.Б.</h3>
-                <p class="card-description">Нет слов, одни эмоции... СПАСИБО вам ребята! Отличный автомобиль, цена и ваше отношение - РЕСПЕКТ!</p>
+                <p class="card-description">Нет слов, одни эмоции... СПАСИБО вам ребята! Отличный автомобиль, цена и ваше отношение&nbsp;-<br>РЕСПЕКТ!</p>
               </div>
             </div>           <!-- /.card -->
           </div>          <!-- /.col-30 -->
@@ -136,23 +136,149 @@
       <div class="container">
         <div class="row">
           <div class="col-30">
-            <h2 class="section-title car__section-title">Авто <span class="car__word">в приближении</span></h2>
+            <div class="column car__column">
+              <h2 class="section-title car__section-title">Авто <span class="car__word">в приближении</span></h2>
             <div class="square car__square">
-              <span class="name">Коробка передач</span>
+              <div class="square__wrap">
+                <span class="square__name">Коробка передач</span>
+                <img src="./img/auto/gear-box.svg" alt="gear_box" class="square__image">
+              </div>
+              <span class="square__tag">AT</span>
+              <span class="square__subtag">5 ст.</span>
             </div>
-          <div class="square square--second car__square"></div>
+            <div class="square square--second car__square">
+              <div class="square__wrap">
+                <span class="square__name">Чистый пробег</span>
+                <img src="./img/auto/speed.svg" alt="speed" class="square__image">
+              </div>
+              <span class="square__tag square__tag--lowercase">+100k</span>
+              <span class="square__subtag">2020 г.</span>
+            </div>
+            </div>
           </div>          <!-- /.col-30 -->
-          <div class="col-30"></div>
-          <!-- /.col-30 -->
-          <div class="col-30"></div>
-          <!-- /.col-30 -->
-        </div>
-        <!-- /.row -->
-      </div>
-      <!-- /.container -->
-    </section>
-    <!-- /.section auto -->
+
+          <div class="col-30">
+            <div class="column car__column">
+              <div class="oil">
+                <span class="oil__title">аи<sup class="oil__number">92</sup><sub class="oil__plus">+</sub></span>
+                <ul class="list oil__list">
+                  <li class="list__item">Мощность: 123</li>
+                  <li class="list__item">Объем: 1.6</li>
+                  <li class="list__item">Расход: 8.9/5.3</li>
+                </ul>
+              </div>
+  
+              <div class="document">
+                <div class="icon-wrap document__icon-wrap"></div>
+                <p class="document__text">Все документы в порядке - единственный собственник за весь период эксплуатации. <span class="document__word">Сел и поехал!</span></p>
+              </div>
+            </div>
+          </div>          <!-- /.col-30 -->
+
+          <div class="col-30">
+            <div class="column car__column">
+              <div class="year">
+                <span class="year__name">2017<sup class="year__up">н. в.</sup></span>
+                <div class="year__wrap">
+                  <div class="icon-wrap year__icon-wrap--first"></div>
+                  <span class="year__number">5</span>
+                  <div class="icon-wrap year__icon-wrap--second"></div>
+                  <span class="year__number">4</span>
+                  <div class="icon-wrap year__icon-wrap--third"></div>
+                </div>
+              </div>
+              <div class="health">
+                <div class="icon-wrap health__icon-wrap"></div>
+                <h3 class="health__title">Укомплектуем дополнительно</h3>
+                <p class="health__text">Мы очень любим наш автомобиль и тщательно ухаживаем за ним, но несмотря на это не придираемся к каждой незначительной царапинке после возврата авто клиентом</p>
+              </div>
+            </div>
+          </div>          <!-- /.col-30 -->
+        </div>        <!-- /.row -->
+      </div>      <!-- /.container -->
+    </section>    <!-- /.section auto -->
+
+
+    <section class="section rent">
+      <div class="container">
+        <div class="line"></div>
+        <div class="row">
+          <div class="col-30">
+            <div class="section-title rent__section-title">Заказать автомобиль в аренду</div>
+          </div>          <!-- /.col-30 -->
+
+          <div class="col-30">
+            <form action="#" class="form rent__form">
+              <select name="days" class="select rent__select">
+                <option value="10 дней">10 дней <strong class="rent__sale">-20%</strong> </option>
+                <option value="20 дней">20 дней</option>
+                <option value="30 дней">30 дней</option>
+              </select>
+              <input type="tel" class="input rent__input" name="phone"  placeholder="Ваш номер:">
+              <button class="button rent__button">Заказать</button>
+              <span class="rent__promocode">У меня есть промокод!</span>
+            </form>
+
+          </div>          <!-- /.col-30 -->
+
+          <div class="col-30">
+            <div class="price-tag">
+              <strong class="rent__price">1 900 <sup class="rent__currency">руб.</sup></strong>
+              <strong class="rent__subprice">2 280</strong>
+            </div>
+          </div>          <!-- /.col-30 -->
+
+        </div>        <!-- /.row -->
+      </div>      <!-- /.container -->
+    </section>    <!-- /.section rent -->
   </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-25">
+          <div class="footer-block">
+            <h3 class="footer-title">Реквизиты</h3>
+            <ul class="footer-text">
+              <li class="footer__item">ИП Пупкин Василий</li>
+              <li class="footer__item">ОГРН: 1053601053600</li>
+              <li class="footer__item">ИНН: 3664036640</li>
+            </ul>
+          </div>
+        </div>        <!-- /.col- -->
+
+        <div class="col-25">
+          <div class="footer-block">
+            <h3 class="footer-title">Контакты</h3>
+            <ul class="footer-text">
+              <li class="footer__item"><a href="#">pupkinvvv@example.ru</a></li>
+              <li class="footer__item"><a href="#">Договор аренды</a></li>
+              <li class="footer__item"><a href="#">Условия</a></li>
+            </ul>
+          </div>
+        </div>        <!-- /.col- -->
+
+        <div class="col-50">
+          <div class="footer-block"></div>
+        </div>        <!-- /.col- -->
+      </div>      <!-- /.row -->
+      <div class="row socials__row">
+        <div class="socials">
+          <div class="icon-wrap socials__icon-wrap socials__icon-wrap--one">
+            <img src="./img/socials/vk1.svg" alt="">
+          </div>
+          <div class="icon-wrap socials__icon-wrap">
+            <a href="youtube.com"><img src="./img/socials/youtube.svg" alt=""></a>
+          </div>
+          <div class="icon-wrap socials__icon-wrap socials__icon-wrap--three"></div>
+          <div class="icon-wrap socials__icon-wrap socials__icon-wrap--four"></div>
+        </div>
+        <!-- /.socials -->
+        <span class="footer__copyright">&copy;2020 Все права защищены</span>
+        <!-- /.copyright -->
+      </div>
+      <!-- /.row -->
+    </div>    <!-- /.container -->
+  </footer>  <!-- /.footer -->
   
 </body>
 </html>
